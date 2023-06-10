@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Breast Cancer Result</title>
+    <style>
+        body {
+            background-image: url('static/result.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Breast Cancer Diagnosis</h1>
+        <p>Please find the diagnosis for breast cancer below:</p>
+        <h1>{{ prediction_text }}</h1>
+        <h3>Information about Breast Cancer:</h3>
+        <p>
+            Benign: Changes in breast tissue that are not cancerous. 
+            Benign breast conditions include various types that do not increase the risk of breast cancer.
+            They can include irregular lumps or cysts, breast swelling or discomfort, skin redness or thickening, and nipple discharge.
+            Also called mammary dysplasia.
+        </p>
+        <p>
+            Malignant: Malignant tumors are cancerous and may be aggressive because they invade and damage surrounding tissue.
+            When a tumor is suspected to be malignant, the doctor will perform a biopsy to determine the severity or aggressiveness of the tumor.
+        </p>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Breast Cancer Prediction by Aliwaris</p>
+    </div>
+</body>
+</html>
